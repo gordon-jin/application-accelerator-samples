@@ -1,12 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: rest-service-db
+  name: customer-profile
   annotations:
-    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=rest-service-db"
+    "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=customer-profile"
 spec:
   type: service
   lifecycle: experimental
   owner: default-team
   providesApis:
-    - rest-service-db
+    - customer-profile
